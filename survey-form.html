@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="survey-form.css">
+    <meta charset="UTF-8">
+    <title>Survey</title>
+</head>
+<body>
+    <div class="main">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to answer this form</p>
+    </div>
+    <div class="main-content">
+        <div class="form-content">
+            <form id="survey-form">
+               <label for="name" id="name-label">Name</label>
+                <input id="name" type="text" required placeholder="Enter your name">
+
+                <label for="email" id="email-label">Email</label>
+                <input id="email" type="email" required placeholder="Enter your email">
+
+                <label for="age" id="age-label">Age</label>
+                <input id="age" type="number" min="0" max="99" required placeholder="Enter your age">
+
+                <label for="dropdown">What is your favorite language?</label>
+                <select id="dropdown">
+                    <option value="python">Python</option>
+                    <option value="kotlin">Kotlin</option>
+                    <option value="java">Java</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="ruby">Ruby</option>
+                    <option value="rust">Rust</option>
+                    <option value="c++">C++</option>
+                </select>
+                <fieldset>
+                    <legend>Would you recommend this survey to a friend?</legend>
+                    <input type="radio" name="recommend" checked id="definitely" value="definitely">
+                        <label for="definitely">Definitely</label>
+                    <br>
+                    <input type="radio" name="recommend" id="maybe" value="maybe">
+                        <label for="maybe">Maybe</label>
+                    <br>
+                    <input type="radio" name="recommend" checked id="not-sure" value="not-sure">
+                        <label for="not-sure">Not sure</label>
+                </fieldset>
+                <p>What would you like to see improved in this survey?</p>
+                <input type="checkbox" id="quality" name="quality" value="quality">
+                <label for="quality">Quality of this survey</label>
+                <br>
+                <input type="checkbox" id="amount" name="amount" value="amount">
+                <label for="amount">Amount of questions</label>
+                <br>
+                <input type="checkbox" id="more" name="more" value="more">
+                <label for="more">Release more surveys</label>
+                <br>
+                <br>
+                <label>Any comments or suggestions?</label>
+                <textarea rows="4" cols="50" id="comments">Enter you comment here...</textarea>
+                <button type="submit" id="submit">Submit your answer</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
